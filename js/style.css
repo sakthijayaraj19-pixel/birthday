@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #3fcd0c;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 100%;
+    box-shadow: 0 10px 30px rgba(216, 27, 96, 0.3);
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #d81b60;
+    background: linear-gradient(to right, #d81b60, #ff4081);
+    background-clip: text;
+    margin-bottom: 30px;
+    -webkit-text-stroke:1px blue;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #f06292;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #555;
+}
+.step img{
+    position: relative;
+    left: 270px;
+    bottom: 35px;
+}
+
+.btn {
+    background: linear-gradient(45deg, #8f2955, #afe065);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(216, 27, 96, 0.4);
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    left: 70px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(216, 27, 96, 0.5);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff4081, #8c1bd8);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn:hover:before {
+    opacity: 1;
+}
+
+.happy{
+  position: relative;
+     font-family: "Aladin", system-ui;
+  font-weight: 400;
+  font-style:oblique;
+}
+.Birthday {
+   position: relative;
+     font-family: "Aladin", system-ui;
+  font-weight: 400;
+  font-style:oblique;
+ -webkit-text-stroke: 2px blue;
+}
+.hat{
+    position: relative;
+    left: 350px;
+    top: -180px;
+}
+.balloon_one{
+    position: relative;
+    top: -280px;
+         display: inline-block;
+    animation: ripple 3s ease-in-out infinite;
+
+}
+.balloon_two{
+    position: relative;
+    top: -400px;
+    left: 400px;
+    
+}
+.image{
+    position: relative;
+    display: flex;
+    overflow: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    top: -550px;
+    left: 120px;
+}
+.image_1{
+    position: relative;
+    display: flex;
+    overflow: auto;
+    top: -550px;
+    left: 120px;
+}
+
+.btn_1{
+    background: linear-gradient(45deg,blue, gray);
+    color: blue;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 35px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px palevioletred;
+    font-weight: 600;
+    font-family: "Aladin", system-ui;
+ -webkit-text-stroke: 1px  greenyellow;
+    letter-spacing: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    left: 500px;
+    top: -1000px;
+
+}
+.btn_1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(216, 27, 96, 0.5);
+}
+
+.btn_1:active {
+    transform: translateY(1px);
+}
+
+.btn_1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ccbbbd, #8c1bd8);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn_1:hover:before {
+    opacity: 1;
+}
+
+.name{
+    position: relative;
+     font-family: "Aladin", system-ui;
+  font-weight: 400;
+  font-style:oblique;
+ -webkit-text-stroke: 2px gold;
+ font-size:xx-large;
+ left: -450px;
+ bottom: 270px;
+ letter-spacing: 3px;
+}
+.birthday-card {
+  position: relative;
+  width: 400px;
+  height: 595px;
+  border: 5px solid #ef5050;
+  margin: 60px auto 0 auto;
+  background-image: url('unnamed.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.birthday-card .text {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  font-family: 'Nobile', sans-serif;
+
+}
+
+.birthday-card .text > p {
+  font-size: 30px;
+  color:white;
+  list-style: 1.4;
+  font-style: italic;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  -webkit-text-stroke: 1px blueviolet;
+  letter-spacing: 2px;
+}
+
+.birthday-card .text .title {
+  font-size: 1.5em;
+  margin: 60px auto 60px auto;
+}
+
+.birthday-card .cover-outer {
+  position: absolute;
+  width: 400px;
+  height: 595px;
+  margin: -10px 0 0 -10px;
+  border: 5px solid #ef5050;
+          backface-visibility: hidden;
+          transform-style: preserve-3d;
+          transform-origin: 0% 50%;          
+          transform: perspective(800px) rotateY(0deg);
+          transition: all 0.8s ease-in-out;
+}
+
+.birthday-card .cover-outer img {
+          box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+}
+.birthday-card:hover .cover-outer {
+  -webkit-transform: perspective(800px) rotateY(-170deg);
+          transform: perspective(800px) rotateY(-170deg);
+}
+.btn_2{
+    background: linear-gradient(45deg,blue, gray);
+    color: blue;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 35px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px palevioletred;
+    font-weight: 600;
+    font-family: "Aladin", system-ui;
+ -webkit-text-stroke: 1px  greenyellow;
+    letter-spacing: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+left: 40px;
+
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner .slider{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 25%;
+    left: calc(50% - 100px); 
+    transform-style: preserve-3d;
+    transform: perspective(1000px);  
+    animation: autoRun 20s linear infinite;
+
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px)rotateX(-5deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px)rotateX(-5deg) rotateY(360deg);
+    }
+}
+ .banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0 ;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(400px);
+
+ }
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner .content{
+    bottom: 50%;
+    color: blue;
+    text-align: center;
+
+}
+    h1 span{
+     display: inline-block;
+    animation: ripple 1.2s ease-in-out infinite;
+}
+.name span {
+     display: inline-block;
+    animation: new 5s ease-in-out 1;
+
+}
+h1 span:nth-child(1){animation-delay: 0s;}
+h1 span:nth-child(2){animation-delay: 0.1s;}
+h1 span:nth-child(3){animation-delay: 0.2s;}
+h1 span:nth-child(4){animation-delay: 0.3s;}
+h1 span:nth-child(5){animation-delay: 0.4s;}
+h1 span:nth-child(6){animation-delay: 0.5s;}
+h1 span:nth-child(7){animation-delay: 0.6s;}
+h1 span:nth-child(8){animation-delay: 0.7s;}
+h1 span:nth-child(9){animation-delay: 0.8s;}
+h1 span:nth-child(10){animation-delay: 0.9s;}
+h1 span:nth-child(11){animation-delay: 0.10s;}
+h1 span:nth-child(12){animation-delay: 0.11s;}
+h1 span:nth-child(13){animation-delay: 0.12s;}
+.name span:nth-child(1){animation-delay: 0s;}
+.name span:nth-child(2){animation-delay: 4s;}
+.name span:nth-child(3){animation-delay: 8s;}
+.name span:nth-child(4){animation-delay: 12s;}
+.name span:nth-child(5){animation-delay: 16s;}
+
+@keyframes ripple{
+    0%,100%{transform: translateY(0)scale(1);color: blue;}
+    50%{transform: translateY(-15px)scale(1.2);color: gold;}
+}
+
+@keyframes new{
+    0%,100%{transform: translateX(0)scale(1);color: blue;}
+    50%{transform: translateY(2em)scale(5);color: brown;}
+}
